@@ -1,0 +1,70 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CLEANUP	Makefile	/^CLEANUP = rm -f $(TARGETS) *.o$/;"	m
+CORE_INCS	Makefile	/^CORE_INCS = -I. \\$/;"	m
+CXX	Makefile	/^CXX = gcc$/;"	m
+NGX_ABORT	defines.h	19;"	d
+NGX_AGAIN	defines.h	15;"	d
+NGX_ALIGNMENT	defines.h	23;"	d
+NGX_ALLOC	Makefile	/^NGX_ALLOC = $(NGX_ROOT)\/ngx_alloc.c  $/;"	m
+NGX_BUSY	defines.h	16;"	d
+NGX_DECLINED	defines.h	18;"	d
+NGX_DEFAULT_POOL_SIZE	ngx_palloc.h	22;"	d
+NGX_DONE	defines.h	17;"	d
+NGX_ERROR	defines.h	14;"	d
+NGX_MAX_ALLOC_FROM_POOL	ngx_palloc.h	20;"	d
+NGX_MIN_POOL_SIZE	ngx_palloc.h	25;"	d
+NGX_OK	defines.h	13;"	d
+NGX_PALLOC	Makefile	/^NGX_PALLOC = $(NGX_ROOT)\/ngx_palloc.c  $/;"	m
+NGX_POOL_ALIGNMENT	ngx_palloc.h	24;"	d
+NGX_ROOT	Makefile	/^NGX_ROOT = \/letv\/fet\/work\/nginx-1.10.2\/test\/$/;"	m
+TARGETS	Makefile	/^TARGETS = ngx_pool_t_test$/;"	m
+TARGETS_C_FILE	Makefile	/^TARGETS_C_FILE = $(TARGETS).c$/;"	m
+_NGX_ALLOC_H_INCLUDED_	ngx_alloc.h	9;"	d
+_NGX_DEFINE_H_	defines.h	2;"	d
+_NGX_PALLOC_H_INCLUDED_	ngx_palloc.h	8;"	d
+alloc	ngx_palloc.h	/^    void                 *alloc;$/;"	m	struct:ngx_pool_large_s
+current	ngx_palloc.h	/^    ngx_pool_t           *current;$/;"	m	struct:ngx_pool_s
+d	ngx_palloc.h	/^    ngx_pool_data_t       d;$/;"	m	struct:ngx_pool_s
+dump_pool	ngx_pool_t_test.c	/^void dump_pool(ngx_pool_t* pool)  $/;"	f
+end	ngx_palloc.h	/^    u_char               *end;$/;"	m	struct:__anon1
+failed	ngx_palloc.h	/^    ngx_uint_t            failed;$/;"	m	struct:__anon1
+large	ngx_palloc.h	/^    ngx_pool_large_t     *large;$/;"	m	struct:ngx_pool_s
+last	ngx_palloc.h	/^    u_char               *last;$/;"	m	struct:__anon1
+main	ngx_pool_t_test.c	/^int main()  $/;"	f
+max	ngx_palloc.h	/^    size_t                max;$/;"	m	struct:ngx_pool_s
+next	ngx_palloc.h	/^    ngx_pool_large_t     *next;$/;"	m	struct:ngx_pool_large_s
+next	ngx_palloc.h	/^    ngx_pool_t           *next;$/;"	m	struct:__anon1
+ngx_align_ptr	defines.h	26;"	d
+ngx_alloc	ngx_alloc.c	/^ngx_alloc(size_t size)$/;"	f
+ngx_calloc	ngx_alloc.c	/^ngx_calloc(size_t size)$/;"	f
+ngx_create_pool	ngx_palloc.c	/^ngx_create_pool(size_t size)$/;"	f
+ngx_destroy_pool	ngx_palloc.c	/^ngx_destroy_pool(ngx_pool_t *pool)$/;"	f
+ngx_free	ngx_alloc.h	17;"	d
+ngx_memalign	ngx_alloc.c	/^ngx_memalign(size_t alignment, size_t size)$/;"	f
+ngx_memalign	ngx_alloc.h	33;"	d
+ngx_memzero	defines.h	29;"	d
+ngx_palloc	ngx_palloc.c	/^ngx_palloc(ngx_pool_t *pool, size_t size)$/;"	f
+ngx_palloc_block	ngx_palloc.c	/^ngx_palloc_block(ngx_pool_t *pool, size_t size)$/;"	f	file:
+ngx_palloc_large	ngx_palloc.c	/^ngx_palloc_large(ngx_pool_t *pool, size_t size)$/;"	f	file:
+ngx_palloc_small	ngx_palloc.c	/^ngx_palloc_small(ngx_pool_t *pool, size_t size, ngx_uint_t align)$/;"	f	file:
+ngx_pcalloc	ngx_palloc.c	/^ngx_pcalloc(ngx_pool_t *pool, size_t size)$/;"	f
+ngx_pfree	ngx_palloc.c	/^ngx_pfree(ngx_pool_t *pool, void *p)$/;"	f
+ngx_pmemalign	ngx_palloc.c	/^ngx_pmemalign(ngx_pool_t *pool, size_t size, size_t alignment)$/;"	f
+ngx_pnalloc	ngx_palloc.c	/^ngx_pnalloc(ngx_pool_t *pool, size_t size)$/;"	f
+ngx_pool_data_t	ngx_palloc.h	/^} ngx_pool_data_t;$/;"	t	typeref:struct:__anon1
+ngx_pool_large_s	ngx_palloc.h	/^struct ngx_pool_large_s {$/;"	s
+ngx_pool_large_t	ngx_palloc.h	/^typedef struct ngx_pool_large_s  ngx_pool_large_t;$/;"	t	typeref:struct:ngx_pool_large_s
+ngx_pool_s	ngx_palloc.h	/^struct ngx_pool_s {$/;"	s
+ngx_pool_t	ngx_palloc.h	/^typedef struct ngx_pool_s        ngx_pool_t;$/;"	t	typeref:struct:ngx_pool_s
+ngx_reset_pool	ngx_palloc.c	/^ngx_reset_pool(ngx_pool_t *pool)$/;"	f
+ngx_uint_t	defines.h	/^typedef uintptr_t       ngx_uint_t;$/;"	t
+u_char	defines.h	/^typedef unsigned char       u_char;$/;"	t
+u_int	defines.h	/^typedef unsigned int        u_int;$/;"	t
+u_long	defines.h	/^typedef unsigned long       u_long;$/;"	t
+u_short	defines.h	/^typedef unsigned short      u_short;$/;"	t
+uintptr_t	defines.h	/^typedef unsigned long       uintptr_t;$/;"	t
